@@ -74,14 +74,13 @@ body {
 /* Мобільна версія */
 .container {
   width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
-  /* background-color: #8d92d3; */
+  padding-right: 16px;
+  padding-left: 16px;
 }
 
 @media screen and (min-width: 428px) {
   .container {
-    width: 426px;
+    width: 428px;
     margin-left: auto;
     margin-right: auto;
   }
@@ -395,7 +394,7 @@ body {
 
 @media screen and (min-width: 768px) {
   .container {
-    width: 766px;
+    width: 768px;
   }
   .mob-menu {
     display: none;
@@ -470,6 +469,7 @@ body {
     max-width: 496px;
   }
   /* Our qualities section планшет */
+
   .list.qua {
     display: flex;
     flex-direction: row;
@@ -481,6 +481,10 @@ body {
   }
   /* Our Team для планшета */
   @media screen and (max-width: 1157px) {
+    .team .container {
+      padding-left: 108px;
+      padding-right: 108px;
+    }
     .list.team {
       display: flex;
       flex-direction: row;
@@ -497,6 +501,9 @@ body {
 @media screen and (min-width: 1158px) {
   .container {
     width: 1158px;
+    padding-right: 15px;
+    padding-left: 15px;
+
     /* background-color: aqua; десктоп*/
   }
   .list.contact-list {
