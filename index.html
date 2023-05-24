@@ -16,6 +16,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     />
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/media.css" />
   </head>
   <body>
     <header class="page-header">
@@ -51,6 +52,78 @@
             </li>
           </ul>
         </address>
+        <button type="button" class="btn-open-menu" data-menu-open>
+          <svg class="icon-open-menu" width="32" height="22">
+            <use href="./images/icons.svg#icon-charm-menu-hamburger"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="mob-menu is-hidden" data-menu>
+        <div class="container mob-container">
+          <button type="button" class="close-btn-mob" data-menu-close>
+            <svg class="modal-icon-close" width="8" height="8">
+              <use href="./images/icons.svg#icon-close"></use>
+            </svg>
+          </button>
+          <ul class="mob-nav-list list">
+            <li class="mob-nav-item">
+              <a class="mob-nav-link link current" href="./index.html"
+                >Studio</a
+              >
+            </li>
+            <li class="mob-nav-item">
+              <a class="mob-nav-link link" href="./portfolio.html">Portfolio</a>
+            </li>
+            <li class="mob-nav-item">
+              <a class="mob-nav-link link" href="">Contacts</a>
+            </li>
+          </ul>
+
+          <div class="mob">
+            <ul class="mob-menu-list list">
+              <li class="mob-menu-item">
+                <a class="menu-tel link" href="tel:+110001111111"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+              <li class="mob-menu-item">
+                <a class="menu-email link" href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+            </ul>
+            <ul class="list media-list">
+              <li class="item">
+                <a href="" class="media-link link">
+                  <svg class="icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="item">
+                <a href="" class="media-link link">
+                  <svg class="icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="item">
+                <a href="" class="media-link link">
+                  <svg class="icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="item">
+                <a href="" class="media-link link">
+                  <svg class="icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </header>
     <!-- Main Content -->
@@ -307,7 +380,7 @@
         </div>
       </section>
       <!-- Customers -->
-      <section class="customers">
+      <!-- <section class="customers">
         <div class="container">
           <h2 class="section-title">Customers</h2>
 
@@ -356,9 +429,10 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
     </main>
-    <footer class="footer">
+    <!-- footer -->
+    <!-- <footer class="footer">
       <div class="container">
         <div class="footer-logo">
           <a class="logo link" href="./index.html"
@@ -422,8 +496,9 @@
           </form>
         </div>
       </div>
-    </footer>
-    <div class="backdrop is-hidden" data-modal>
+    </footer> -->
+    <!-- modal -->
+    <!-- <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="close-btn-modal" data-modal-close>
           <svg class="modal-icon-close" width="8" height="8">
@@ -497,7 +572,9 @@
           <button type="submit" class="button">Send</button>
         </form>
       </div>
-    </div>
+    </div> -->
+    <!-- script -->
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
