@@ -720,6 +720,95 @@ form .button:hover,
 form .button:focus {
   background-color: var(--hover-focus-color);
 }
+/* Стилі Портфоліо мобільні */
+.section.portfol {
+  padding-top: 48px;
+  padding-bottom: 48px;
+}
+
+.list.btn {
+  display: flex;
+  flex-wrap: wrap;
+
+  row-gap: 16px;
+  margin-bottom: 48px;
+}
+.section .work-button {
+  color: var(--blue-text-color);
+  background-color: var(--text-footer-section-color);
+  border: 1px solid var(--hairlines-button-color);
+  border-radius: 4px;
+  cursor: pointer;
+  padding: 8px 16px;
+  margin-right: 24px;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.section .work-button:hover,
+.section .work-button:focus {
+  color: var(--main-background-color);
+  background-color: var(--hover-focus-color);
+  border: 1px solid transparent;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+.work-container {
+  padding: 32px 16px;
+  border: 1px solid var(--hairlines-button-color);
+  border-top: none;
+}
+.work-title {
+  color: var(--title-color);
+  letter-spacing: 0.02em;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  margin-bottom: 8px;
+}
+.section-text-work {
+  color: var(--text-color);
+  font-weight: 400;
+  line-height: 1.5;
+}
+.list.examples {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 48px;
+}
+
+.portfolio-overlay {
+  position: relative;
+  overflow: hidden;
+}
+.portfolio-overlay-text {
+  color: var(--text-footer-section-color);
+  line-height: 1.5;
+  font-weight: 400;
+  padding: 40px 32px;
+
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--blue-text-color);
+
+  transform: translateY(100%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.link:hover .portfolio-overlay-text,
+.link:focus .portfolio-overlay-text {
+  transform: translateY(0%);
+}
 
 /* Стилі Планшет */
 
@@ -870,6 +959,30 @@ form .button:focus {
     padding: 72px 24px 24px 24px;
     width: 408px;
   }
+
+  /* Стилі Портфоліо для планшета */
+  .section.portfol {
+    padding-top: 64px;
+    padding-bottom: 96px;
+  }
+  .list.btn {
+    justify-content: center;
+    gap: 24px;
+    margin-bottom: 64px;
+  }
+  .section .work-button {
+    margin: 0;
+    padding: 12px 24px;
+  }
+  .list.examples {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 72px;
+    column-gap: 24px;
+  }
+  .item-work {
+    width: calc((100% - 24px) / 2);
+  }
 }
 /* Десктопні стилі */
 @media screen and (min-width: 1158px) {
@@ -975,5 +1088,21 @@ form .button:focus {
   .footer .container {
     display: flex;
     align-items: baseline;
+  }
+
+  /* Стилі Портфоліо десктоп */
+  .section.portfol {
+    padding-top: 100px;
+    padding-bottom: 120px;
+  }
+  .list.btn {
+    margin-bottom: 72px;
+  }
+  .list.examples {
+    row-gap: 48px;
+    column-gap: 24px;
+  }
+  .item-work {
+    width: calc((100% - 48px) / 3);
   }
 }
