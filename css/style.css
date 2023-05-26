@@ -270,13 +270,24 @@ body {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/background-hero.jpg);
+    url(../images/dark-bg-mob.jpg);
 
   background-position: center;
   max-width: 428px;
   height: 432px;
   background-repeat: no-repeat;
   background-size: cover;
+}
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .hero-overlay {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/dark-bg-mob-2x.jpg);
+  }
 }
 .hero-title {
   color: var(--main-background-color);
@@ -740,7 +751,6 @@ form .button:focus {
   border-radius: 4px;
   cursor: pointer;
   padding: 8px 16px;
-  margin-right: 24px;
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
@@ -759,6 +769,9 @@ form .button:focus {
   border: 1px solid transparent;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+.btn-item {
+  margin-right: 24px;
 }
 
 .work-container {
@@ -877,10 +890,26 @@ form .button:focus {
     background-color: var(--hover-focus-color);
   }
 
-  /* hero section планшет */
+  /* hero section для планшета */
   .hero {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/dark-bg-tab.jpg);
     max-width: 768px;
     height: 436px;
+  }
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero-overlay {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/dark-bg-tab-2x.jpg);
+    }
   }
   .hero-title {
     font-size: 56px;
@@ -888,7 +917,7 @@ form .button:focus {
     margin-bottom: 36px;
     max-width: 496px;
   }
-  /* Our qualities section планшет */
+  /* Our qualities section для планшета */
 
   .list.qua {
     display: flex;
@@ -971,8 +1000,10 @@ form .button:focus {
     margin-bottom: 64px;
   }
   .section .work-button {
-    margin: 0;
     padding: 12px 24px;
+  }
+  .btn-item {
+    margin-right: 0px;
   }
   .list.examples {
     display: flex;
@@ -1009,7 +1040,24 @@ form .button:focus {
     height: 600px;
     padding-top: 188px;
     padding-bottom: 188px;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/people-office.jpg);
   }
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero-overlay {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/people-office-2x.jpg);
+    }
+  }
+
   .hero-title {
     margin-bottom: 48px;
     max-width: 496px;
@@ -1048,7 +1096,7 @@ form .button:focus {
     font-weight: 400;
     line-height: 1.5;
   }
-  /* What are we doing десктопа */
+  /* What are we doing десктоп */
   .section.doing {
     display: block;
     padding-bottom: 120px;
@@ -1062,7 +1110,7 @@ form .button:focus {
     margin: 0;
     width: calc((100% - 48px) / 3);
   }
-  /* Our Team для десктопа */
+  /* Our Team  десктоп */
   .list.team {
     display: flex;
     gap: 24px;

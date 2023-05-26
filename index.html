@@ -16,7 +16,6 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     />
     <link rel="stylesheet" href="./css/style.css" />
-    <link rel="stylesheet" href="./css/media.css" />
   </head>
   <body>
     <header class="page-header">
@@ -201,21 +200,33 @@
           <ul class="list doing">
             <li class="item">
               <img
-                src="./images/work1.jpg"
+                srcset="
+                  ./images/examples-of-work1.jpg    1x,
+                  ./images/examples-of-work1-2x.jpg 2x
+                "
+                src="./images/examples-of-work1.jpg"
                 alt="program for use on a computer"
                 width="360"
               />
             </li>
             <li class="item">
               <img
-                src="./images/work2.jpg"
+                srcset="
+                  ./images/examples-of-work2.jpg    1x,
+                  ./images/examples-of-work2-2x.jpg 2x
+                "
+                src="./images/examples-of-work2.jpg"
                 alt="application for use on the phone"
                 width="360"
               />
             </li>
             <li class="item">
               <img
-                src="./images/work3.jpg"
+                srcset="
+                  ./images/examples-of-work3.jpg    1x,
+                  ./images/examples-of-work3-2x.jpg 2x
+                "
+                src="./images/examples-of-work3.jpg"
                 alt="program for use on a laptop"
                 width="360"
               />
@@ -229,7 +240,15 @@
           <h2 class="section-title transform">Our Team</h2>
           <ul class="list team">
             <li class="item border">
-              <img src="./images/employees1.jpg" alt="employees" width="264" />
+              <img
+                srcset="
+                  ./images/mark-guerrero.jpg    1x,
+                  ./images/mark-guerrero-2x.jpg 2x
+                "
+                src="./images/mark-guerrero.jpg"
+                alt="employees"
+                width="264"
+              />
               <div class="team-container">
                 <h3 class="section-name">Mark Guerrero</h3>
                 <p class="section-text">Product Designer</p>
@@ -266,7 +285,12 @@
               </div>
             </li>
             <li class="item border">
-              <img src="./images/employees2.jpg" alt="employees" width="264" />
+              <img
+                srcset="./images/tom-ford.jpg 1x, ./images/tom-ford-2x.jpg 2x"
+                src="./images/tom-ford.jpg"
+                alt="employees"
+                width="264"
+              />
               <div class="team-container">
                 <h3 class="section-name">Tom Ford</h3>
                 <p class="section-text">Frontend Developer</p>
@@ -303,7 +327,15 @@
               </div>
             </li>
             <li class="item border">
-              <img src="./images/employees3.jpg" alt="employees" width="264" />
+              <img
+                srcset="
+                  ./images/camila-garcia.jpg    1x,
+                  ./images/camila-garcia-2x.jpg 2x
+                "
+                src="./images/camila-garcia.jpg"
+                alt="employees"
+                width="264"
+              />
               <div class="team-container">
                 <h3 class="section-name">Camila Garcia</h3>
                 <p class="section-text">Marketing</p>
@@ -340,7 +372,15 @@
               </div>
             </li>
             <li class="item border">
-              <img src="./images/employees4.jpg" alt="employees" width="264" />
+              <img
+                srcset="
+                  ./images/daniel-wilson.jpg    1x,
+                  ./images/daniel-wilson-2x.jpg 2x
+                "
+                src="./images/daniel-wilson.jpg"
+                alt="employees"
+                width="264"
+              />
               <div class="team-container">
                 <h3 class="section-name">Daniel Wilson</h3>
                 <p class="section-text">UI Designer</p>
