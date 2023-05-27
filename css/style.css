@@ -134,6 +134,9 @@ body {
   .add {
     display: none;
   }
+  .section-qualities {
+    text-align: center;
+  }
 
   .footer .container {
     display: flex;
@@ -172,11 +175,18 @@ body {
     transition-timing-function: linear;
   }
   .mob-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
     position: relative;
     padding-top: 80px;
     padding-left: 40px;
     padding-bottom: 40px;
     padding-right: 24px;
+  }
+  .mob-nav-link.current {
+    color: var(--hover-focus-color);
   }
   .mob-nav-link {
     font-weight: 700;
@@ -185,6 +195,9 @@ body {
     letter-spacing: 0.02em;
 
     color: var(--title-color);
+  }
+  .mob {
+    width: 100%;
   }
 
   .menu-tel {
@@ -207,9 +220,7 @@ body {
   .mob-nav-item:not(:last-child) {
     margin-bottom: 40px;
   }
-  .mob-nav-list {
-    margin-bottom: 284px;
-  }
+
   .mob-menu-item:not(:last-child) {
     margin-bottom: 40px;
   }
@@ -221,8 +232,8 @@ body {
     height: 40px;
 
     display: flex;
-    gap: 56px;
-
+    /* gap: 56px; */
+    justify-content: start;
     align-items: center;
   }
 
@@ -364,6 +375,7 @@ body {
 }
 /* Our Team мобільні */
 .section.team {
+  background-color: var(--text-footer-section-color);
   padding: 96px 0;
 }
 
@@ -497,9 +509,12 @@ body {
   gap: 16px;
   align-items: center;
 }
+.footer-submit {
+  width: 100%;
+}
 
 .footer-mail {
-  width: 398px;
+  width: 100%;
   height: 40px;
   margin-bottom: 16px;
   padding-left: 16px;
@@ -563,7 +578,8 @@ form .button:focus {
   left: 50%;
   transform: translate(-50%, -50%);
 
-  width: 392px;
+  max-width: 392px;
+  width: 100%;
   min-height: 576px;
   background: #fcfcfc;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
@@ -606,6 +622,9 @@ form .button:focus {
   fill: #ffffff;
 }
 /* Стилі форми модалки */
+/* .form {
+  width: 100%;
+} */
 .modal-form {
   margin-bottom: 8px;
 }
@@ -832,6 +851,7 @@ form .button:focus {
   .mob-menu {
     display: none;
   }
+
   .btn-open-menu {
     display: none;
   }
@@ -930,11 +950,20 @@ form .button:focus {
   }
   /* Our Team для планшета */
   @media screen and (max-width: 1157px) {
-    .team .container,
-    .customers .container {
-      padding-left: 108px;
-      padding-right: 108px;
+    .contact {
+      font-size: 12px;
+      line-height: 1.17;
+      letter-spacing: 0.04em;
     }
+    .list.contact-list {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+    .team .container {
+      width: 584px;
+    }
+
     .list.team {
       display: flex;
       flex-direction: row;
@@ -946,7 +975,7 @@ form .button:focus {
     }
     .footer .container {
       display: flex;
-      width: 582px;
+      width: 584px;
       flex-direction: row;
       flex-wrap: wrap;
       gap: 24px;
@@ -956,6 +985,9 @@ form .button:focus {
     }
   }
   /* Customers для планшета */
+  .customers .container {
+    width: 584px;
+  }
   .customers-list {
     gap: 72px 24px;
   }
@@ -1063,6 +1095,9 @@ form .button:focus {
     max-width: 496px;
   }
   /* Our qualities section десктоп */
+  .section.qua {
+    padding: 120px 0;
+  }
   .list.qua {
     display: flex;
     gap: 24px;
@@ -1111,11 +1146,20 @@ form .button:focus {
     width: calc((100% - 48px) / 3);
   }
   /* Our Team  десктоп */
+  .section.team {
+    padding: 120px 0;
+  }
   .list.team {
     display: flex;
     gap: 24px;
   }
   /* Customers десктоп */
+  .section.customers {
+    padding: 120px 0;
+  }
+  .customers .container {
+    width: 1158px;
+  }
   .customers-list {
     gap: 24px;
   }
