@@ -84,6 +84,9 @@ body {
     margin-left: auto;
     margin-right: auto;
   }
+  .mob .media-list {
+    gap: 56px;
+  }
 }
 
 .container.main-nav {
@@ -229,12 +232,12 @@ body {
   }
 
   .mob .media-list {
-    height: 40px;
+    /* height: 40px;
 
     display: flex;
-    /* gap: 56px; */
+    gap: 56px; */
     justify-content: start;
-    align-items: center;
+    /* align-items: center; */
   }
 
   .icon {
@@ -319,7 +322,7 @@ body {
   min-width: 169px;
   height: 56px;
   padding: 16px 32px;
-  margin: auto;
+  margin: 0 auto;
 
   color: var(--main-background-color);
   background-color: var(--blue-text-color);
@@ -537,7 +540,7 @@ body {
 .button-footer {
   display: flex;
   gap: 16px;
-
+  margin: 0;
   padding: 8px 24px;
   min-width: 165px;
   height: 40px;
@@ -703,6 +706,7 @@ form .button:focus {
 }
 .modal-check-icon {
   border-color: #2e2f4266;
+  flex-shrink: 0;
 }
 
 .unchecked {
