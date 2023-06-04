@@ -540,7 +540,7 @@ body {
 .button-footer {
   display: flex;
   gap: 16px;
-  margin: 0;
+
   padding: 8px 24px;
   min-width: 165px;
   height: 40px;
@@ -1018,6 +1018,9 @@ form .button:focus {
     margin: 0;
     width: 264px;
     margin-right: 24px;
+  }
+  .button-footer {
+    margin: 0;
   }
   /* modal для планшета */
   .modal {
